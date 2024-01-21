@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,9 +21,9 @@ export default function RootLayout({
       <body
         className={cn("h-full relative antialiased font-sans", inter.className)}
       >
-        
         {/* The classes in the main tag ensures that our main components take the full scrren so that when there is no content footer remains at the bottom */}
         <main className="relative flex flex-col min-h-screen">
+          <Navbar />
           <div className="flex-grow flex-1">{children}</div>
         </main>
       </body>
