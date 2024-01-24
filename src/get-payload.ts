@@ -3,7 +3,7 @@ import path from "path";
 import payload from "payload";
 import type { InitOptions } from "payload/config";
 
-// Basically here we made a database client using payload, which now we can use in our entire application and also we impemeted caching to optimise our resources.
+// Basically here we made a database client using payload, which we can use in our entire application and also we implemented caching to optimise our resources.
 
 dotenv.config({
   path: path.resolve(__dirname, "../.env"),
